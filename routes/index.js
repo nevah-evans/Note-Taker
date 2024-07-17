@@ -1,7 +1,8 @@
 const router = require('express').Router();
 
-const NoteData = require('../db/db.json');
 
-router.use('/db', notes);
+const NoteRouter = require('./notes');
+
+router.use('/notes', NoteRouter);
 
 module.exports = router;
